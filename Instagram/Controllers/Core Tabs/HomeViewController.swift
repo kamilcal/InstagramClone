@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     }
 
     private func handleNotAuthenticated() {
-        
+//        kimlik doğrulama durumunu kontrol et
         if Auth.auth().currentUser == nil {
 //            show log in
             let loginVC = LoginViewController()
