@@ -204,6 +204,35 @@ class LoginViewController: UIViewController {
               let password = usernameEmailField.text, !password.isEmpty, password.count >= 8 else {
             return
         }
+        
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains("."){
+            email = usernameEmail
+        } else {
+            username = usernameEmail
+        }
+        
+        
+        AuthManager.shared.loginUser(username: username,
+                                     email: email,
+                                     password: password){ succes in
+            DispatchQueue.main.async {
+                if succes {
+                    self.dismiss(animated: true)
+                } else {
+                    let alert = UIAlertController(title: "Log In Error",
+                                                  message: "We were unable to log you in.",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss",
+                                                  style: .cancel ))
+                    self.present(alert, animated: true)
+                }
+            }
+            
+        }
+        
     }
     @objc private func didTapTermsButton() {
         guard let url = URL(string: "https://help.instagram.com/581066165581870") else {
@@ -211,8 +240,9 @@ class LoginViewController: UIViewController {
         }
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true)
-
+        
     }
+    
     @objc private func didTapPrivacyButton() {
         guard let url = URL(string: "https://help.instagram.com/155833707900388") else {
             return
@@ -220,9 +250,11 @@ class LoginViewController: UIViewController {
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true)
     }
+    
     @objc private func didTapCreateAccountButton() {
         let vc = RegistrationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        present(UINavigationController(rootViewController: vc),animated: true)
     }
     
     
