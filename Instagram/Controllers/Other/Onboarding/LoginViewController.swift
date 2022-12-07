@@ -255,6 +255,8 @@ class LoginViewController: UIViewController {
         let vc = RegistrationViewController()
         vc.title = "Create Account"
         present(UINavigationController(rootViewController: vc),animated: true)
+//        present(vc, animated: true)
+//        ?? arasındaki farka bak.
     }
     
     

@@ -33,6 +33,10 @@
 		D2A5F9DD293C1E9C00403A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F9DB293C1E9C00403A86 /* Main.storyboard */; };
 		D2A5F9DF293C1E9D00403A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F9DE293C1E9D00403A86 /* Assets.xcassets */; };
 		D2A5F9E2293C1E9D00403A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F9E0293C1E9D00403A86 /* LaunchScreen.storyboard */; };
+		D2CFAEB629401C19008C7186 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAEB529401C19008C7186 /* IGFeedPostTableViewCell.swift */; };
+		D2CFAEB92940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAEB82940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift */; };
+		D2CFAEBC29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAEBB29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift */; };
+		D2CFAEBE2940214E008C7186 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAEBD2940214E008C7186 /* IGFeedPostActionsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		D2A5F9DE293C1E9D00403A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A5F9E1293C1E9D00403A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5F9E3293C1E9D00403A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CFAEB529401C19008C7186 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		D2CFAEB82940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D2CFAEBB29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		D2CFAEBD2940214E008C7186 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
 		DA53E7B3D3F9758D6521B449 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +133,7 @@
 		D277845D293D01690075F56B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D2CFAEB229401B8B008C7186 /* Cells */,
 				D2778460293D01D10075F56B /* Storyboards */,
 				D2A5F9DE293C1E9D00403A86 /* Assets.xcassets */,
 			);
@@ -220,6 +229,25 @@
 				D2486A93293D1C2C003AF557 /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
+			sourceTree = "<group>";
+		};
+		D2CFAEB229401B8B008C7186 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2CFAEB729402050008C7186 /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D2CFAEB729402050008C7186 /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D2CFAEB529401C19008C7186 /* IGFeedPostTableViewCell.swift */,
+				D2CFAEB82940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift */,
+				D2CFAEBD2940214E008C7186 /* IGFeedPostActionsTableViewCell.swift */,
+				D2CFAEBB29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,15 +368,18 @@
 			files = (
 				D2778474293D053F0075F56B /* EditProfileViewController.swift in Sources */,
 				D2778462293D02B80075F56B /* ExploreViewController.swift in Sources */,
+				D2CFAEBC29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				D2778482293D08190075F56B /* PublishPostViewController.swift in Sources */,
 				D2778464293D03090075F56B /* CameraViewController.swift in Sources */,
 				D2A5F9DA293C1E9C00403A86 /* HomeViewController.swift in Sources */,
 				D277846F293D04C50075F56B /* RegistrationViewController.swift in Sources */,
+				D2CFAEB92940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				D2778480293D07DA0075F56B /* PostEditorViewController.swift in Sources */,
 				D2486A9E293D2DDE003AF557 /* StorageManager.swift in Sources */,
 				D2778472293D05090075F56B /* PostViewController.swift in Sources */,
 				D25FD1FC293E2C7C0037F80A /* Extension.swift in Sources */,
 				D2486A98293D245C003AF557 /* DatabaseManager.swift in Sources */,
+				D2CFAEB629401C19008C7186 /* IGFeedPostTableViewCell.swift in Sources */,
 				D2778466293D03CA0075F56B /* NotificationsViewController.swift in Sources */,
 				D277847E293D078D0075F56B /* SearchResultViewController.swift in Sources */,
 				D277846D293D048F0075F56B /* LoginViewController.swift in Sources */,
@@ -357,6 +388,7 @@
 				D2486A9A293D2A27003AF557 /* AuthManager.swift in Sources */,
 				D2A5F9D6293C1E9C00403A86 /* AppDelegate.swift in Sources */,
 				D2A5F9D8293C1E9C00403A86 /* SceneDelegate.swift in Sources */,
+				D2CFAEBE2940214E008C7186 /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				D277847A293D07400075F56B /* ListViewController.swift in Sources */,
 				D2778476293D05820075F56B /* SettingsViewController.swift in Sources */,
 			);
