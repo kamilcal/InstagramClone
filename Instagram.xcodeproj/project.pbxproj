@@ -13,6 +13,10 @@
 		D2486A9A293D2A27003AF557 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2486A99293D2A27003AF557 /* AuthManager.swift */; };
 		D2486A9E293D2DDE003AF557 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2486A9D293D2DDE003AF557 /* StorageManager.swift */; };
 		D25FD1FC293E2C7C0037F80A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FD1FB293E2C7C0037F80A /* Extension.swift */; };
+		D26C7D972941379700F7B3D5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C7D962941379700F7B3D5 /* FormTableViewCell.swift */; };
+		D26C7DBA29422CA300F7B3D5 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C7DB929422CA300F7B3D5 /* PhotoCollectionViewCell.swift */; };
+		D26C7DBC29422D6000F7B3D5 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C7DBB29422D6000F7B3D5 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		D26C7DBE29422E1800F7B3D5 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26C7DBD29422E1800F7B3D5 /* ProfileTabsCollectionReusableView.swift */; };
 		D2778462293D02B80075F56B /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2778461293D02B80075F56B /* ExploreViewController.swift */; };
 		D2778464293D03090075F56B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2778463293D03090075F56B /* CameraViewController.swift */; };
 		D2778466293D03CA0075F56B /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2778465293D03CA0075F56B /* NotificationsViewController.swift */; };
@@ -48,6 +52,10 @@
 		D2486A99293D2A27003AF557 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D2486A9D293D2DDE003AF557 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D25FD1FB293E2C7C0037F80A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D26C7D962941379700F7B3D5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		D26C7DB929422CA300F7B3D5 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D26C7DBB29422D6000F7B3D5 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D26C7DBD29422E1800F7B3D5 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		D2778461293D02B80075F56B /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		D2778463293D03090075F56B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D2778465293D03CA0075F56B /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,15 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		D26C7DB829422C3500F7B3D5 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D26C7DBB29422D6000F7B3D5 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				D26C7DBD29422E1800F7B3D5 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
 		D277845C293D01620075F56B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +150,7 @@
 		D277845D293D01690075F56B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D26C7DB829422C3500F7B3D5 /* CollectionView Headers */,
 				D2CFAEB229401B8B008C7186 /* Cells */,
 				D2778460293D01D10075F56B /* Storyboards */,
 				D2A5F9DE293C1E9D00403A86 /* Assets.xcassets */,
@@ -234,6 +252,8 @@
 		D2CFAEB229401B8B008C7186 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D26C7DB929422CA300F7B3D5 /* PhotoCollectionViewCell.swift */,
+				D26C7D962941379700F7B3D5 /* FormTableViewCell.swift */,
 				D2CFAEB729402050008C7186 /* Home Feed */,
 			);
 			path = Cells;
@@ -367,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2778474293D053F0075F56B /* EditProfileViewController.swift in Sources */,
+				D26C7DBC29422D6000F7B3D5 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				D2778462293D02B80075F56B /* ExploreViewController.swift in Sources */,
 				D2CFAEBC29402136008C7186 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				D2778482293D08190075F56B /* PublishPostViewController.swift in Sources */,
@@ -375,10 +396,13 @@
 				D277846F293D04C50075F56B /* RegistrationViewController.swift in Sources */,
 				D2CFAEB92940207F008C7186 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				D2778480293D07DA0075F56B /* PostEditorViewController.swift in Sources */,
+				D26C7D972941379700F7B3D5 /* FormTableViewCell.swift in Sources */,
+				D26C7DBE29422E1800F7B3D5 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				D2486A9E293D2DDE003AF557 /* StorageManager.swift in Sources */,
 				D2778472293D05090075F56B /* PostViewController.swift in Sources */,
 				D25FD1FC293E2C7C0037F80A /* Extension.swift in Sources */,
 				D2486A98293D245C003AF557 /* DatabaseManager.swift in Sources */,
+				D26C7DBA29422CA300F7B3D5 /* PhotoCollectionViewCell.swift in Sources */,
 				D2CFAEB629401C19008C7186 /* IGFeedPostTableViewCell.swift in Sources */,
 				D2778466293D03CA0075F56B /* NotificationsViewController.swift in Sources */,
 				D277847E293D078D0075F56B /* SearchResultViewController.swift in Sources */,
