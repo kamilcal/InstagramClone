@@ -37,8 +37,32 @@ public class StorageManager {
         case photo,video
     }
     public struct  UserPost {
+        let identifier: String
         let postType: UserPostType
+        let thumbnailImage: URL
+        let postURL: URL
+        let caption: String?
+        let likeCount: [PostLike]
+        let comment: [PostComment]
+        let createdDate: Date
+        let taggedUsers: [User]
+        
         
     }
-    
+    struct PostComment {
+        let identifier: String
+        let username: String
+        let text: String
+        let createdDate: Date
+        let like: [CommentLike]
+        
+    }
+    struct PostLike{
+        let username: String
+        let postIdentifier: String
+    }
+    struct CommentLike{
+        let username: String
+        let commentIdentifier: String
+    }
 }

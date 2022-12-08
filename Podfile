@@ -6,7 +6,7 @@ target 'Instagram' do
   use_frameworks!
 
 pod "Appirater"
-
+pod 'SDWebImage'
 pod 'FirebaseAuth'
 pod 'FirebaseCore'
 pod 'FirebaseFirestore'	
